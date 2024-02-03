@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"><!-- Diccionario de palabras -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Adaptacion a los distintos dispositivos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title></title>
+</head>
+
+<body>
+
+    <main class="container bg-body-secondary">
+
+        <h1 class="text-info-emphasis text-center pt-3 text-decoration-underline">Info Eléctrica!</h1>
+        <section class="card my-4">
+
+            <article class="card-body">
+                <h2 class="card-title">En tu factura!</h2>
+                <p class="card-text">Explicación de donde buscar la información del consumo eléctrico.</p>
+            </article>
+        </section>
+
+        <section class="card text-center">
+            <article class="card-body p-2">
+                <h2 class="card-text">Año anterior</h2>
+                <input class="input-group" type="number" id="lastYear" min="0" max="3000">
+            </article>            
+            <article class="card-body p-2">
+                <h2 class="card-title">Actual</h2>
+                <input class="input-group" type="number" id="actualYear" min="0" max="3000">
+                <p class="card-text" id="message"></p>
+            </article>            
+            <button class="btn btn-success m-2 p-3" type="submit" id="submit">Calcular</button>
+            <article class="card-body p-2" id="bimonth">
+                <h2 class="card-title">Bimestre Anterior</h2>
+                <p class="card-text" id="messageBim"></p>
+            </article>
+        </section>
+        <section class="card">
+            
+        </section>
+            
+            
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="data.js"></script>
+</body>

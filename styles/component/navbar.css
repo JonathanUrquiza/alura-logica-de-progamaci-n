@@ -1,0 +1,16 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1rem;
+    padding-left: 14px;
+}
+
+.navbar-title {
+    font-size: 4rem;
+    color: var(--blue-button);
+    font-weight: 500;
+    font-family: var(--title-font);
+}
+

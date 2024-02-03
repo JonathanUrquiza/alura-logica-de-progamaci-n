@@ -1,0 +1,35 @@
+:root {
+    
+    --primary-solid: #ff3333;
+    --primary-900:rgba(255,51,51,0.9);
+    --primary-500:rgba(255,51,51,0.5);
+    --primary-300:rgba(255,51,51,0.3);
+    
+    --secondary-solid: #1D84B5;
+    --secondary-900:rgba(29,132,181,0.9);
+    --secondary-500:rgba(29,132,181,0.5);
+    --secondary-300:rgba(29,132,181,0.3);
+
+
+    --dark-solid: #1f1f1f;
+    --dark-900:rgba(31,31,31,0.9);
+    --dark-500:rgba(31,31,31,0.5);
+    --dark-300:rgba(31,31,31,0.3);
+
+
+    --dark-bg-solid: #30343f;
+    --light-bg-solid: #fafaff;
+    --light-font-solid: #ffffff;
+    
+    --border-gray:#c9c9c9;
+    --blue-button:rgb(5, 5, 123);
+
+    --site-header: #383c46;
+    --site-main-background: #ffffff;
+    --site-color-font: antiquewhite;
+
+
+    --site-main-background: #ffffff;   
+    --base-font:'Inter', Sans-serif;
+    --title-font: 'Maven Pro', sans-serif;
+}

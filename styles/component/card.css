@@ -1,0 +1,18 @@
+.card {
+    width: 100%;
+    height: fit-content;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-title {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: var(--base-font);
+    text-align: center;
+}
+.card-text {
+    font-family: var(--base-font);
+    text-align: center;
+    color: var(--dark-bg-solid);
+}
