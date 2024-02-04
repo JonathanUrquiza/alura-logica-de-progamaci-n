@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="styles/index.css">
     <title></title>
 </head>
 <body>
@@ -23,13 +24,19 @@
                     </div>
                 </form>
         </section>
-        <section>
+        <section class="container-aside">
             <div class="card">
-                <picture class="container-img">
-                    <img src="img/imgpeople.png" class="card-img" alt="">
+                <picture class="img-lock" id="img">
+                    <img src="img/imgpeople.png"  class="iimg-lock" alt="">
                 </picture>
-                <h5 class="card-title" id="titleCode">Ningún mensaje fue encontrado</h5>
-                <p class="card-text" id="response">Ingrese el texto que desea encriptar o Descencriptar</p>
+                <div class="card-body">    
+                    <h5 class="card-title" id="titleCode">Ningún mensaje fue encontrado</h5>
+                </div>
+                <div class="card-footer">
+                    <p class="card-text" id="response">Ingrese el texto que desea encriptar o Descencriptar</p></div>
+                <div class="btn-alone">
+                    <button type="submit" class="btn btn-lock" id="copy">Copiar</button>
+                </div>
             </div>
         </section>
 
@@ -39,5 +46,6 @@
 
     </footer>
     <script src="Javascript/app.js">App</script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js">Toastify</script>
 </body>
 </html>

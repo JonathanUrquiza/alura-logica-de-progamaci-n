@@ -1,7 +1,7 @@
 @import url('variables/fonts.css');
 @import url('variables/variable.css');
 @import url('variables/normalize.css');
-@import url('component/container.css');
 @import url('component/navbar.css');
+@import url('component/container.css');
 @import url('component/card.css');
 @import url('component/btn.css');
