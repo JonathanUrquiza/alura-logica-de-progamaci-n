@@ -8,7 +8,8 @@ const text = document.getElementById('text'),
     response = document.getElementById('response'),
     titleCode = document.getElementById('titleCode'),
     img = document.getElementById('img'),
-    copy = document.getElementById('copy');
+    copy = document.getElementById('copy'),
+    styleChange = document.getElementById('styleChange');
 
 
 
@@ -94,6 +95,25 @@ const createClass = (params1, params2, params3, params4) => {
     params3.className = 'img-lockTo';
     params4.style.display = "block";
 }
+const styling = () => {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'styles/bootstrap.min.css';
+    document.head.appendChild(link)
+}
+
+let contador = 0;
+styleChange.addEventListener('click', (e) => {
+    
+    if (contador == 0) {
+        e.preventDefault();
+        styling();
+        contador++;
+    } else if (contador != 0) {
+        contador--;
+    };
+});
+
 //boton de encriptación!
 encript.addEventListener('click', (e) => {
     e.preventDefault();
@@ -125,6 +145,7 @@ encript.addEventListener('click', (e) => {
         }
     }, 2000);
 });
+
 //boton de desencriptación en evento click
 unCript.addEventListener('click', (e) => {
     e.preventDefault()

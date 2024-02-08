@@ -1,20 +1,34 @@
 
 .btn-group {
-    width: fit-content;
+    width: 100%;
     height:fit-content;
     padding: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 .btn {
     width: 100%;
+    border: none;
     border-radius: 20px;
     padding: 1.5rem;
     margin: 1em;
     font-family: var(--base-font);
     font-size: 1rem;
+}
+.btn-style {
+    background-color: var(--primary-solid);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    padding: 3px;
+    color: var(--light-font-solid);
+    box-shadow: 0 4px 8px 0 rgb(255, 255, 255), 0 6px 20px 0 rgb(255, 255, 255);
+    position: fixed;
+    right: 20px;
+    bottom: 25px;
+    
 }
 .btn-lock {
     display: none;

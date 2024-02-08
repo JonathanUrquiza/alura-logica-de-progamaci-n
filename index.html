@@ -7,45 +7,54 @@
     <link rel="stylesheet" href="styles/index.css">
     <title></title>
 </head>
-<body>
-    <header>
-        <nav class="navbar">
-            <h1 class="navbar-title">a</h1>
+<body class="bg-black">
+    <header class="container-fluid">
+        <nav class="navbar bg-dark border border-warning rounded-4">
+            <ul>
+                <li>
+                    <h1 class="navbar-title text-warning">a</h1>
+                </li>
+            </ul>
+            <form action="" method="get" class="pe-3">
+            <button type="submit" class="btn-style btn-warning p-1" id="styleChange">Cambiar estilos</button>
+            </form>
         </nav>
     </header>
-    <main class="container">
-        <section class="container-row">
-                <form action="" method="" class="container-form" id="form">
-                    <textarea class="form-textarea" name="text" id="text" cols="30" rows="10" placeholder="Ingrese su texto aquí..."></textarea>
-                        <span class="card-text"><img src="" alt=""> Solo letras minusculas y sin acentos.</span>
-                    <div class="btn-group">
-                        <button id="encript" class="btn btn-blue">Encriptar</button>
+    <main class="container d-flex flex-md-row flex-column align-items-stretch justify-content-around">
+        <section class="container-row border border-warning bg-dark row col-12 col-md-7 mt-4">
+                <form action="" method="" class="container-form mt-3 " id="form">
+                    <textarea class="form-textarea w-100 rounded-5 p-3" name="text" id="text" cols="30" rows="10" placeholder="Ingrese su texto aquí..."></textarea>
+                        <span class="card-text  text-light"><img src="" alt=""> Solo letras minusculas y sin acentos.</span>
+                    <div class="btn-group d-flex flex-column flex-md-row align-items-center justify-content-around justify-content-md-center">
+                        <button id="encript" class="btn btn-info btn-blue">Encriptar</button>
                         <button id="unCript" class="btn btn-light btn-uncript">Descencriptar</button>
                     </div>
                 </form>
         </section>
-        <section class="container-aside">
-            <div class="card">
+        <section class="container-aside border border-warning bg-dark row col-12 col-md-4 p-3 mt-4">
+            <div class="card w-100 rounded-5 h-100">
                 <picture class="img-lock" id="img">
                     <img src="img/imgpeople.png"  class="iimg-lock" alt="">
                 </picture>
                 <div class="card-body">    
-                    <h5 class="card-title" id="titleCode">Ningún mensaje fue encontrado</h5>
+                    <h5 class="card-title" id="titleCode">Ningún mensaje fue encontrado.</h5>
                 </div>
                 <div class="card-footer">
-                    <p class="card-text" id="response">Ingrese el texto que desea encriptar o Descencriptar</p></div>
-                <div class="btn-alone">
-                    <button type="submit" class="btn btn-lock" id="copy">Copiar</button>
+                    <p class="card-text text-secondary" id="response">Ingrese el texto que desea <span class="text-dark">encriptar</span> o <span class="text-danger">Descencriptar</span></p>
+                </div>
+                <div class="btn-alone d-flex flex-row align-items-center">
+                    <button type="submit" class="btn btn-lock btn-success" id="copy">Copiar</button>
                 </div>
             </div>
         </section>
-
-
     </main>
     <footer>
-
     </footer>
     <script src="Javascript/app.js">App</script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js">Toastify</script>
 </body>
 </html>
+
+
+
+
