@@ -36,31 +36,33 @@ const unCriptFn = (params) => {
 }
 
 
+
 //Funcion que evalua el arraay recibido por parametro
 function evaluate(arr) {
     //Crea un array vacio.
     const response = [];
-
+    
     //Evalua cada valor del array y ordena segun valor, utilizando un ciclo for para recorrer el array obtenido.
     for (let i = 0; i < arr.length; i++) {
         const element = arr[i];
         if (element == " ") {
             response.push(" ");
-        } else if (element == "a") {
+        } else if (element == "a" || element == "á") {
             response.push(code.a);
-        } else if (element == "e") {
+        } else if (element == "e" || element == "é") {
             response.push(code.e);
-        } else if (element == "i") {
+        } else if (element == "i" || element == "í") {
             response.push(code.i);
-        } else if (element == "o") {
+        } else if (element == "o" || element == "ó") {
             response.push(code.o);
-        } else if (element == "u") {
+        } else if (element == "u" || element == "ú") {
             response.push(code.u);
         } else {
             response.push(element);
         };
     };
     //utiliza el array vacio y lo retorna codificado.
+    
     return response;
 };
 //Funcion principal que codifica la cadena de caracteres.
@@ -91,7 +93,7 @@ const createResponse = (params, params2) => {
 const createClass = (params1, params2, params3, params4) => {
     //Asigna clases dinamicamente a los distintos elementos del documento para dales estilos dependiendo del dinamismo de la pagina.
     params1.className = 'card-text';
-    params2.className = 'img-lockTo';
+    params2.className = 'img-lockTo';//solo le cambio estilos.
     params3.className = 'img-lockTo';
     params4.style.display = "block";
 }
@@ -99,7 +101,8 @@ const styling = () => {
     const link = document.createElement('link');
     link.rel = 'stylesheet';
     link.href = 'styles/bootstrap.min.css';
-    document.head.appendChild(link)
+    document.head.appendChild(link);
+    img.className = 'card-img-top';
 }
 
 let contador = 0;
@@ -141,6 +144,9 @@ encript.addEventListener('click', (e) => {
                 cleanCamp(response);
                 createResponse(cod, response);
                 createClass(response, titleCode, img, copy);
+                if (contador == 1) {
+                    img.className = 'd-none'
+                }
             }, 4000);
         }
     }, 2000);

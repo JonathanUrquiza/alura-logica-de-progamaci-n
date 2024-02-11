@@ -15,6 +15,7 @@
 }
 
 .card-title {
+    color: var(--dark-solid);
     font-size: 2rem;
     font-weight: 400;
     font-family: var(--base-font);
